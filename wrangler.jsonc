@@ -1,0 +1,21 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "pump-proxy",
+	"main": "./src/index.ts",
+	"compatibility_date": "2025-04-01",
+	"upload_source_maps": true,
+	"dispatch_namespaces": [
+		{
+			"binding": "DISPATCHER",
+			"namespace": "my-dispatch-namespace",
+			"experimental_remote": true
+		}
+	],
+	"observability": {
+		"enabled": true
+	},
+	"vars": {
+		"CLOUDFLARE_ACCOUNT_ID": "48f6189a907fec3b5dfa94c8bea10625",
+		"READONLY": "true"
+	}
+}
